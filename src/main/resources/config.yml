@@ -1,0 +1,57 @@
+#   ____  _                        _                         _     _     _
+#  |  _ \| | __ _ _   _  ___ _ __ / \   ___ ___ ___  ___ ___| |   (_)___| |_
+#  | |_) | |/ _` | | | |/ _ \ '__/ _ \ / __/ __/ _ \/ __/ __| |   | / __| __|
+#  |  __/| | (_| | |_| |  __/ | / ___ \ (_| (_|  __/\__ \__ \ |___| \__ \ |_
+#  |_|   |_|\__,_|\__, |\___|_|/_/   \_\___\___\___||___/___/_____|_|___/\__|
+#                 |___/
+#
+# Дополнение, которое добавляет интеграцию Telegram в плагин
+# PlayerAccessList (https://spigotmc.ru/resources/playeraccesslist-belyj-chernyj-spisok.4243/)
+
+telegram:
+  enabled: true
+
+  # Как получить токен?
+  # 1) В Telegram открой BotFather (t.me/botfather)
+  # 2) Введи команду /newbot
+  # 3) Напиши имя и username (username должен заканчиваться на bot)
+  # 4) Скопируй присланный токен
+  token: "YOUR-BOT-TOKEN"
+
+  # Люди, которые могут использовать бота (username)
+  allowed-users:
+    - bordyer
+  # Сообщение, которому отправляется тому кого нет в списке
+  else-message: ""
+
+  # Тип форматирования
+  # MARKDOWN, MARKDOWN2, HTML, null
+  # [!] Если вы используете HTML, вместо <br> используйте \n
+  parse-mode: HTML
+
+  # Плейсхолдеры
+  placeholders:
+    empty: "Пусто"
+
+  # Кнопки
+  buttons:
+    add: "Добавить"
+    remove: "Удалить"
+    list: "Список"
+    whitelist: "Белый список"
+    blacklist: "Черный список"
+    back: "Назад"
+
+  # Сообщения
+  messages:
+    start: "<b>Добро пожаловать!</b>\n\nДанный бот управляет белым списком и черным списком. Вы можете добавить или удалить игрока с списков через этого бота\n\n<b>Сделан с помощью плагина <a href='https://spigotmc.ru/resources/playeraccesslist-belyj-chernyj-spisok.4243/'>PlayerAccessList</a></b>"
+    select-list-add: "Выберите список для ДОБАВЛЕНИЯ:"
+    select-list-remove: "Выберите список для УДАЛЕНИЯ:"
+    write-name: "Введите имя игрока"
+    added: 'Игрок "{player}" добавлен в {list} ✅'
+    removed: 'Игрок "{player}" удалён из {list} ❌'
+    list: "<b>Списки</b>\n\nБелый список: {whitelist}\nЧерный список: {blacklist}"
+    back: "Вы вернулись в главное меню."
+    select-action: "Выберите действие:"
+    already-on-the-list: "Такой уже есть в списке"
+    not-on-the-list: "Такого нет в списке"

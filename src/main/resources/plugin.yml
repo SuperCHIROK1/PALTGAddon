@@ -1,0 +1,8 @@
+name: PlAccessListTGAddon
+version: '${project.version}'
+main: me.superchirok1.pal.tgaddon.Main
+api-version: '1.16'
+prefix: PALTG
+depend: [PlayerAccessList]
+authors: [SuperCHIROK1]
+description: Telegram Addon for PlayerAccessList
