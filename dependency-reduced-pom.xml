@@ -4,7 +4,7 @@
   <groupId>me.superchirok1</groupId>
   <artifactId>PlAccessListTGAddon</artifactId>
   <name>PlAccessListTGAddon</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <description>Telegram Addon for PlayerAccessList</description>
   <build>
     <resources>
@@ -60,9 +60,9 @@
     <dependency>
       <groupId>me.superchirok1</groupId>
       <artifactId>PlayerAccessList</artifactId>
-      <version>1.0.2</version>
+      <version>2.0.0.1</version>
       <scope>system</scope>
-      <systemPath>${project.basedir}/libs/PlayerAccessList-1.0.2.jar</systemPath>
+      <systemPath>${project.basedir}/libs/PlayerAccessList.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>
